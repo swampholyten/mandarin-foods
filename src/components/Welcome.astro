@@ -1,8 +1,46 @@
 ---
-import DishCard from "@/components/dish-card";
-import { chuancai } from "@/data/cuisines/sichuan";
+import { Image } from "astro:assets";
+import panda from "@/assets/panda.jpeg";
 ---
 
-<div class="flex flex-col justify-center items-center gap-20">
-  {chuancai.map((food) => <DishCard food={food} />)}
-</div>
+<main class="min-h-screen flex flex-col items-center justify-center p-4 md:p-8">
+  <div class="max-w-6xl w-full bg-white rounded-lg shadow-lg overflow-hidden">
+    <div class="flex flex-col md:flex-row">
+      {/* Left side - Text content */}
+      <div class="w-full md:w-1/2 p-6 md:p-8 flex flex-col justify-around">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-semibold">
+          Famous Mandarin Dishes
+        </h1>
+        <div class="text-muted-foreground my-6">
+          <p>
+            This webpage illustrates all the famous Mandarin dishes from Chinese
+            cuisine. Mandarin cuisine is known for its variety of flavors,
+            cooking techniques, and regional specialties that have evolved over
+            thousands of years.
+          </p>
+          <p>
+            From iconic dishes like Peking Duck and Kung Pao Chicken to
+            lesser-known delicacies, explore the rich culinary heritage of
+            Mandarin cooking traditions.
+          </p>
+        </div>
+
+        <a
+          href="/sichuan"
+          class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[>svg]:px-3"
+          >Start</a
+        >
+      </div>
+
+      {/* Right side - Image */}
+      <div class="w-full md:w-1/2 relative h-64 md:h-auto">
+        <Image
+          src={panda}
+          alt="Logo"
+          class="object-cover"
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
+      </div>
+    </div>
+  </div>
+</main>

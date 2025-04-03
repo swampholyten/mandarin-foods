@@ -27,8 +27,10 @@ const foods = getDishes(category);
 ---
 
 <Layout>
-  <div class="container m-auto">
-    <h1>{category.charAt(0).toUpperCase() + category.slice(1)} Cuisine</h1>
+  <div class="container m-auto flex flex-col justify-center gap-10">
+    <h1 class="text-3xl md:text-4xl lg:text-5xl font-semibold py-12">
+      {category.charAt(0).toUpperCase() + category.slice(1)} Cuisine
+    </h1>
     <div class="grid grid-cols-3 gap-10">
       {
         foods.map((food) => (
