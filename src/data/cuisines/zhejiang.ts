@@ -10,7 +10,7 @@ export const zhecai: Dish[] = [
       "A signature Zhejiang dish where tender chicken is marinated in Shaoxing rice wine, resulting in a delicate flavor imbued with subtle aromas of fermented rice.",
     chineseDescription:
       "一道浙江名菜，将鸡肉浸泡在绍兴黄酒中，肉质鲜嫩，酒香浓郁，风味独特。",
-    imageUrl: "/assets/dishes/shaoxing-drunken-chicken.jpg",
+    imageUrl: "/zhejiang/shaoxing-drunken-chicken.jpeg",
   },
   {
     id: "west-lake-vinegar-fish",
@@ -21,7 +21,7 @@ export const zhecai: Dish[] = [
       "A celebrated Hangzhou specialty featuring fresh fish cooked in a tangy vinegar sauce, balancing sweet and sour flavors with a hint of umami.",
     chineseDescription:
       "一道杭州名菜，采用新鲜鱼肉配以西湖特制醋汁，酸甜适口，鲜香四溢。",
-    imageUrl: "/assets/dishes/west-lake-vinegar-fish.jpg",
+    imageUrl: "/zhejiang/west-lake-vinegar-fish.jpeg",
   },
   {
     id: "song-sao-fish-soup",
@@ -32,7 +32,7 @@ export const zhecai: Dish[] = [
       "A refined soup from Zhejiang featuring silky fish fillets in a smooth, savory broth, named after a legendary culinary figure.",
     chineseDescription:
       "一道精致的浙江汤品，以嫩滑鱼片煮成鲜美汤羹，传说中的宋嫂更添风味传奇。",
-    imageUrl: "/assets/dishes/song-sao-fish-soup.jpg",
+    imageUrl: "/zhejiang/song-sao-fish-soup.jpeg",
   },
   {
     id: "longjing-shrimp",
@@ -43,7 +43,7 @@ export const zhecai: Dish[] = [
       "A famous Hangzhou dish where succulent shrimp is stir-fried with fresh Longjing tea, lending a unique floral aroma and a hint of natural sweetness.",
     chineseDescription:
       "一道杭州经典，以鲜虾与龙井茶同炒，虾仁嫩滑，茶香清雅，回味悠长。",
-    imageUrl: "/assets/dishes/longjing-shrimp.jpg",
+    imageUrl: "/zhejiang/longjing-shrimp.jpeg",
   },
   {
     id: "stewed-pork-with-dried-vegetables",
@@ -54,7 +54,7 @@ export const zhecai: Dish[] = [
       "A hearty Zhejiang dish where pork is slowly stewed with dried vegetables, allowing the flavors to meld into a rich, savory delight.",
     chineseDescription:
       "一道经典浙菜，猪肉与干菜慢炖，充分吸收香料精华，口感浓郁，回味无穷。",
-    imageUrl: "/assets/dishes/stewed-pork-with-dried-vegetables.jpg",
+    imageUrl: "/zhejiang/stewed-pork-with-dried-vegetables.jpeg",
   },
   {
     id: "dongpo-pork",
@@ -65,7 +65,7 @@ export const zhecai: Dish[] = [
       "A legendary dish attributed to Su Dongpo, featuring succulent pork belly braised until meltingly tender in a sweet and savory sauce.",
     chineseDescription:
       "一道传世佳肴，东坡肉以五花肉为主料，红烧入味，肥而不腻，口感极为细腻。",
-    imageUrl: "/assets/dishes/dongpo-pork.jpg",
+    imageUrl: "/zhejiang/dongpo-pork.jpeg",
   },
   {
     id: "yellow-croaker-soup-with-snow-vegetables",
@@ -76,7 +76,7 @@ export const zhecai: Dish[] = [
       "A comforting soup that features tender yellow croaker simmered with pickled snow vegetables, creating a harmonious blend of salty and savory flavors.",
     chineseDescription:
       "一道浙菜名汤，黄鱼与雪菜同炖，汤汁鲜美，鱼肉嫩滑，酸咸适中，回味悠长。",
-    imageUrl: "/assets/dishes/yellow-croaker-soup-with-snow-vegetables.jpg",
+    imageUrl: "/zhejiang/yellow-croaker-soup-with-snow-vegetables.jpeg",
   },
   {
     id: "oil-burst-shrimp",
@@ -87,7 +87,7 @@ export const zhecai: Dish[] = [
       "A quick-fried shrimp dish from Zhejiang where the shrimp is rapidly cooked in hot oil to preserve its sweetness and tenderness.",
     chineseDescription:
       "一道浙菜快炒佳肴，虾仁在高温油爆下外酥里嫩，鲜甜可口，极具诱人香气。",
-    imageUrl: "/assets/dishes/oil-burst-shrimp.jpg",
+    imageUrl: "/zhejiang/oil-burst-shrimp.jpeg",
   },
   {
     id: "five-flavor-pan-fried-crab",
@@ -98,7 +98,7 @@ export const zhecai: Dish[] = [
       "A distinctive dish where crab is pan-fried to perfection and coated with a complex sauce that balances sweet, sour, salty, bitter, and umami notes.",
     chineseDescription:
       "一道风味独特的浙菜，蟹肉煎制后佐以五味酱汁，口感层次丰富，鲜香四溢。",
-    imageUrl: "/assets/dishes/five-flavor-pan-fried-crab.jpg",
+    imageUrl: "/zhejiang/five-flavor-pan-fried-crab.jpeg",
   },
   {
     id: "clear-soup-yue-chicken",
@@ -109,6 +109,6 @@ export const zhecai: Dish[] = [
       "A delicate and nourishing dish featuring tender chicken gently simmered in a clear broth, highlighting the natural flavors of the ingredients.",
     chineseDescription:
       "一道清淡滋补的浙菜，嫩鸡在清汤中慢煮，汤味鲜美，营养丰富，回味悠长。",
-    imageUrl: "/assets/dishes/clear-soup-yue-chicken.jpg",
+    imageUrl: "/zhejiang/clear-soup-yue-chicken.jpeg",
   },
 ];

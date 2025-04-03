@@ -1,11 +1,11 @@
-import { huicai } from "@/data/anhui";
-import { yuecai } from "@/data/cantonese";
-import { mincai } from "@/data/fujian";
-import { xiangcai } from "@/data/hunan";
-import { sucai } from "@/data/jiangsu";
-import { lucai } from "@/data/lusu";
-import { chuancai } from "@/data/sichuan";
-import { zhecai } from "@/data/zhejiang";
+import { huicai } from "@/data/cuisines/anhui";
+import { yuecai } from "@/data/cuisines/cantonese";
+import { mincai } from "@/data/cuisines/fujian";
+import { xiangcai } from "@/data/cuisines/hunan";
+import { sucai } from "@/data/cuisines/jiangsu";
+import { lucai } from "@/data/cuisines/lusu";
+import { chuancai } from "@/data/cuisines/sichuan";
+import { zhecai } from "@/data/cuisines/zhejiang";
 import type { CuisineCategory } from "@/lib/types";
 
 export const getDishes = (category: CuisineCategory) => {
