@@ -1,5 +1,11 @@
+import { huicai } from "@/data/anhui";
+import { yuecai } from "@/data/cantonese";
+import { mincai } from "@/data/fujian";
 import { xiangcai } from "@/data/hunan";
+import { sucai } from "@/data/jiangsu";
+import { lucai } from "@/data/lusu";
 import { chuancai } from "@/data/sichuan";
+import { zhecai } from "@/data/zhejiang";
 import type { CuisineCategory } from "@/lib/types";
 
 export const getDishes = (category: CuisineCategory) => {
@@ -9,17 +15,17 @@ export const getDishes = (category: CuisineCategory) => {
     case "sichuan":
       return chuancai;
     case "cantonese":
-      return chuancai;
+      return yuecai;
     case "fujian":
-      return chuancai;
+      return mincai;
     case "jiangsu":
-      return chuancai;
+      return sucai;
     case "zhejiang":
-      return chuancai;
+      return zhecai;
     case "anhui":
-      return chuancai;
+      return huicai;
     case "shandong":
-      return chuancai;
+      return lucai;
     default:
       return [];
   }

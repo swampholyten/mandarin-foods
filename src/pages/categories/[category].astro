@@ -1,0 +1,59 @@
+---
+import DishCard from "@/components/dish-card";
+import { getDishes } from "@/data/queries";
+import Layout from "@/layouts/Layout.astro";
+import type { CuisineCategory } from "@/lib/types";
+
+export function getStaticPaths() {
+  const categories: CuisineCategory[] = [
+    "sichuan",
+    "hunan",
+    "cantonese",
+    "fujian",
+    "jiangsu",
+    "zhejiang",
+    "anhui",
+    "shandong",
+  ];
+
+  return categories.map((category) => ({
+    params: { category },
+    props: { category },
+  }));
+}
+
+const { category } = Astro.props;
+const searchParams = new URL(Astro.request.url).searchParams;
+const foodId = searchParams.get("id");
+const foods = getDishes(category);
+
+// Find specific food if ID is provided
+const selectedFood = foodId ? foods.find((food) => food.id === foodId) : null;
+---
+
+<Layout>
+  <div class="container m-auto">
+    {
+      !selectedFood ? (
+        <>
+          <h1>
+            {category.charAt(0).toUpperCase() + category.slice(1)} Cuisine
+          </h1>
+          <div class="grid grid-cols-3 gap-10">
+            {foods.map((food) => (
+              <div class="flex max-w-3xl">
+                <DishCard food={food} />
+              </div>
+            ))}
+          </div>
+        </>
+      ) : (
+        <div>
+          {/* Add your single food view component/layout here */}
+          <h1>{selectedFood.name}</h1>
+          {/* Add more food details as needed */}
+        </div>
+      )
+    }
+  </div>
+</Layout>
