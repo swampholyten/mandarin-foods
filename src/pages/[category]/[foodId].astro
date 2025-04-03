@@ -1,0 +1,38 @@
+---
+import { getCategories, getDishes, getFoodDetails } from "@/data/queries";
+import Layout from "@/layouts/Layout.astro";
+import type { CuisineCategory } from "@/lib/types";
+
+export function getStaticPaths() {
+  const categories = getCategories();
+  let paths: {
+    params: { category: CuisineCategory; foodId: string };
+    props: { category: CuisineCategory; foodId: string };
+  }[] = [];
+  for (const category of categories) {
+    const foods = getDishes(category);
+
+    const categoryPaths = foods.map((food) => ({
+      params: { category, foodId: food.id },
+      props: { category, foodId: food.id },
+    }));
+    paths = [...paths, ...categoryPaths];
+  }
+
+  return paths;
+}
+
+const { category, foodId } = Astro.props;
+const food = getFoodDetails(category, foodId);
+
+if (!food) {
+  return Astro.redirect("/404");
+}
+---
+
+<Layout>
+  <div class="container m-auto">
+    <h1>{food.name}</h1>
+    <p>{food.description}</p>
+  </div>
+</Layout>

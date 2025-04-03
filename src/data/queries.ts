@@ -30,3 +30,22 @@ export const getDishes = (category: CuisineCategory) => {
       return [];
   }
 };
+
+export const getCategories = (): CuisineCategory[] => {
+  const categories: CuisineCategory[] = [
+    "sichuan",
+    "hunan",
+    "cantonese",
+    "fujian",
+    "jiangsu",
+    "zhejiang",
+    "anhui",
+    "shandong",
+  ];
+
+  return categories;
+};
+
+export const getFoodDetails = (category: CuisineCategory, foodId: string) => {
+  return getDishes(category).find((food) => food.id === foodId);
+};
