@@ -164,3 +164,19 @@ export const cuisineCategories: Category[] = [
     commonIngredients: ["Seafood", "Corn", "Peanuts", "Scallions", "Vinegar"],
   },
 ];
+
+name: "Sichuan Cuisine";
+
+name: "Hunan Cuisine";
+
+name: "Cantonese Cuisine";
+
+name: "Fujian Cuisine";
+
+name: "Jiangsu Cuisine";
+
+name: "Zhejiang Cuisine";
+
+name: "Anhui Cuisine";
+
+name: "Shandong Cuisine";
