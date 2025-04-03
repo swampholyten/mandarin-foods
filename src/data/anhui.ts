@@ -46,15 +46,15 @@ export const huicai: Dish[] = [
     imageUrl: "/assets/dishes/wenzheng-bamboo-shoots.jpg",
   },
   {
-    id: "feixi-old-hen-soup",
+    id: "huangshan-braised-pigeon",
     categoryId: "anhui",
-    name: "Feixi Old Hen Soup",
-    chineseName: "肥西老母鸡汤",
+    name: "Huangshan Braised Pigeon",
+    chineseName: "黄山炖鸽",
     description:
-      "A nourishing soup from Anhui featuring an old hen from Feixi, slowly simmered with herbs to create a rich and restorative broth.",
+      "A delicate Anhui dish featuring pigeon slow-cooked with herbs and mountain delicacies, resulting in tender meat and a fragrant broth.",
     chineseDescription:
-      "一道滋补的徽菜，将肥西老母鸡与多种药材慢炖，汤汁浓郁，营养丰富。",
-    imageUrl: "/assets/dishes/feixi-old-hen-soup.jpg",
+      "一道精致的安徽菜，鸽子与山珍药材慢炖，肉质鲜嫩，汤汁清香。",
+    imageUrl: "/assets/dishes/huangshan-braised-pigeon.jpg",
   },
   {
     id: "nine-fragrant-rice-straw-pork",
@@ -68,48 +68,36 @@ export const huicai: Dish[] = [
     imageUrl: "/assets/dishes/nine-fragrant-rice-straw-pork.jpg",
   },
   {
-    id: "wabei-vermicelli-bun",
+    id: "ham-braised-soft-shelled-turtle",
     categoryId: "anhui",
-    name: "Wabei Vermicelli Bun",
-    chineseName: "皖北粉丝包",
+    name: "Ham-Braised Soft-Shelled Turtle",
+    chineseName: "火腿炖甲鱼",
     description:
-      "A regional specialty from northern Anhui, these delicate dumplings are stuffed with vermicelli and savory fillings, then steamed to perfection.",
+      "A nourishing Jiangsu dish featuring soft-shelled turtle slow-cooked with ham and aromatic spices, resulting in a rich and flavorful broth.",
     chineseDescription:
-      "一道皖北传统小吃，包裹着细粉丝和鲜美馅料的小包子，蒸制而成，口感层次丰富。",
-    imageUrl: "/assets/dishes/wabei-vermicelli-bun.jpg",
+      "一道滋补的江苏菜，将甲鱼与火腿及香料慢炖，汤汁浓郁，风味独特。",
+    imageUrl: "/assets/dishes/ham-braised-soft-shelled-turtle.jpg",
   },
   {
-    id: "steamed-preserved-meats-anhui",
+    id: "red-braised-civet",
     categoryId: "anhui",
-    name: "Steamed Preserved Meats",
-    chineseName: "腊味合蒸",
+    name: "Red-Braised Civet",
+    chineseName: "红烧果子狸",
     description:
-      "A comforting Anhui dish where an assortment of preserved meats are steamed together, allowing their rich flavors to meld into a harmonious whole.",
+      "A traditional Hunan dish where civet meat is braised in a savory and slightly spicy sauce, highlighting the region's bold flavors.",
     chineseDescription:
-      "一道传统徽菜，精选多种腊味同蒸，香气融合，肉质鲜美，风味浓郁。",
-    imageUrl: "/assets/dishes/steamed-preserved-meats-anhui.jpg",
+      "一道传统湖南菜，果子狸肉经过红烧，酱汁浓郁，略带辣味，体现了湖南菜系的鲜明特色。",
+    imageUrl: "/assets/dishes/red-braised-civet.jpg",
   },
   {
-    id: "daguan-garden-roast-duck",
+    id: "shiitake-mushrooms-with-chestnuts",
     categoryId: "anhui",
-    name: "Daguan Garden Roast Duck",
-    chineseName: "大观园烤鸭",
+    name: "Shiitake Mushrooms with Chestnuts",
+    chineseName: "香菇板栗",
     description:
-      "A sumptuous roast duck dish inspired by the historic Daguan Garden, featuring crispy skin and tender meat with a richly aromatic glaze.",
+      "A hearty Shandong dish combining braised shiitake mushrooms and chestnuts in a savory sauce, creating a rich and comforting flavor.",
     chineseDescription:
-      "一道精致的徽菜烤鸭，灵感源自大观园，皮脆肉嫩，调味浓郁，回味悠长。",
-    imageUrl: "/assets/dishes/daguan-garden-roast-duck.jpg",
-  },
-  {
-    id: "anhui-style-steamed-fish-head-with-chopped-chili",
-    categoryId: "anhui",
-    name: "Anhui Style Steamed Fish Head with Chopped Chili",
-    chineseName: "徽式剁椒蒸鱼头",
-    description:
-      "A robust dish from Anhui featuring a fish head steamed with a generous amount of chopped chili peppers, combining a bold spicy kick with the delicate flavor of the fish.",
-    chineseDescription:
-      "一道地道徽菜，将鱼头与大量剁椒同蒸，既保留鱼肉鲜美，又增添辛辣风味。",
-    imageUrl:
-      "/assets/dishes/anhui-style-steamed-fish-head-with-chopped-chili.jpg",
+      "一道山东家常菜，香菇和板栗一起红烧，酱汁浓郁，口感醇厚。",
+    imageUrl: "/assets/dishes/shiitake-mushrooms-with-chestnuts.jpg",
   },
 ];
