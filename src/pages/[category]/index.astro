@@ -1,5 +1,5 @@
 ---
-import DishCard from "@/components/dish-card";
+import { FoodCard } from "@/components/FoodCard";
 import { getDishes } from "@/lib/queries";
 import Layout from "@/layouts/Layout.astro";
 import type { CuisineCategory } from "@/lib/types";
@@ -28,14 +28,14 @@ const foods = getDishes(category);
 
 <Layout>
   <div class="container m-auto flex flex-col justify-center gap-10">
-    <h1 class="text-3xl md:text-4xl lg:text-5xl font-semibold py-12">
+    <h1 class="text-4xl md:text-5xl font-semibold py-12 pl-2">
       {category.charAt(0).toUpperCase() + category.slice(1)} Cuisine
     </h1>
-    <div class="grid grid-cols-3 gap-10">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mx-auto">
       {
         foods.map((food) => (
           <div class="flex max-w-3xl">
-            <DishCard food={food} />
+            <FoodCard food={food} />
           </div>
         ))
       }

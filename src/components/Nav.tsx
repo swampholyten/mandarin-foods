@@ -80,7 +80,7 @@ export function DesktopNav() {
             <div className="w-[800px] p-4">
               <div className="grid grid-cols-2 gap-4">
                 {cuisines.map((cuisine) => (
-                  <CuisineCard
+                  <NavCard
                     key={cuisine.title}
                     title={cuisine.title}
                     href={cuisine.href}
@@ -152,16 +152,16 @@ export function MobileNav() {
   );
 }
 
-interface CuisineCardProps {
+interface NavCardProps {
   title: string;
   href: string;
   description: string;
   image: string;
 }
 
-function CuisineCard({ title, href, description, image }: CuisineCardProps) {
+function NavCard({ title, href, description, image }: NavCardProps) {
   return (
-    <a href={href} className="group block">
+    <div className="group block">
       <div className="flex gap-4 rounded-lg p-3 transition-colors hover:bg-accent">
         <div className="relative w-24 h-22 overflow-hidden rounded-md shrink-0">
           <img
@@ -171,14 +171,17 @@ function CuisineCard({ title, href, description, image }: CuisineCardProps) {
           />
         </div>
         <div className="flex flex-col justify-center">
-          <h3 className="text-base font-medium group-hover:underline">
-            {title}
-          </h3>
+          <a
+            href={href}
+            className="text-base font-medium group-hover:underline"
+          >
+            <h3>{title}</h3>
+          </a>
           <p className="line-clamp-2 text-sm text-muted-foreground">
             {description}
           </p>
         </div>
       </div>
-    </a>
+    </div>
   );
 }

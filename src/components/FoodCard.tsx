@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Info } from "lucide-react";
 import type { Dish } from "@/lib/types";
 
-export default function DishCard({ food }: { food: Dish }) {
+export function FoodCard({ food }: { food: Dish }) {
   const { id, categoryId, name, chineseName, description, imageUrl } = food;
   return (
     <a href={`/${categoryId}/${id}`}>

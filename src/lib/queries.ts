@@ -3,7 +3,7 @@ import { yuecai } from "@/data/cuisines/cantonese";
 import { mincai } from "@/data/cuisines/fujian";
 import { xiangcai } from "@/data/cuisines/hunan";
 import { sucai } from "@/data/cuisines/jiangsu";
-import { lucai } from "@/data/cuisines/lusu";
+import { lucai } from "@/data/cuisines/shandong";
 import { chuancai } from "@/data/cuisines/sichuan";
 import { zhecai } from "@/data/cuisines/zhejiang";
 import type { CuisineCategory } from "@/lib/types";

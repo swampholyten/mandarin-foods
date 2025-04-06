@@ -26,13 +26,13 @@ const { category, foodId } = Astro.props;
 const food = getFoodDetails(category, foodId);
 
 if (!food) {
+  console.log("NOT FOUND");
   return Astro.redirect("/404");
 }
 ---
 
 <Layout>
-  <div class="container m-auto">
-    <h1>{food.name}</h1>
-    <p>{food.description}</p>
+  <div class="container m-auto flex flex-col justify-center gap-10">
+    <h1>Hello</h1>
   </div>
 </Layout>
